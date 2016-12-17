@@ -1,0 +1,65 @@
+.site_header {
+  width: 100%;
+  background: linear-gradient(#f68a28, #f36c00);
+  height: 58px;
+}
+
+.site_header-content {
+  width: $container-width;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.site_header-logo {
+  width: 145px;
+  height: 30px;
+  align-self: center;
+  background: url(https://www.getharvest.com/assets/harvest-logo-1f8d464891bbc977a643daf139b61a2faf3e445bb16313effd4c3a834d058c8c.svg) no-repeat 0 0;
+}
+
+.site_header-nav {
+  display: flex;
+}
+
+.site_header-navItems {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.site_header-navItems .site_header-navItem {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+  padding: 0px 15px 0px 15px;
+}
+
+.site_header-navItems .site_header-navItem:hover {
+  background-color: rgba(255,255,255,0.2);
+  cursor: pointer;
+}
+
+.site_header-tryItButton {
+  border: 1px solid white;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border-radius: 4px;
+  display: table;
+  margin: auto 0px auto 10px;
+  padding: 9px 12px 9px 12px;
+  font-size: 1em;
+  transition: background .2s;
+}
+
+.site_header-tryItButton:hover {
+  background: #3eb123;
+  cursor: pointer;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
