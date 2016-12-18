@@ -1,15 +1,23 @@
-<header class="site_header">
-  <div class="site_header-content">
-    <div class="site_header-logo"></div>
-    <nav class="site_header-nav">
-      <ul class="site_header-navItems">
-        <a class="site_header-navItem" href="https://www.google.com"><div> Tour </div></a>
-        <a class="site_header-navItem"><div> Pricing </div></a>
-        <a class="site_header-navItem"><div> Customers </div></a>
-        <a class="site_header-navItem"><div> Blog </div></a>
-        <a class="site_header-navItem"><div> Sign In </div></a>
-      </ul>
-      <a class="site_header-tryItButton"> Try Shmarvest Free </a>
-    </nav>
-  </div>
-</header>
+<% if user_signed_in? %>
+  <header class="site_header">
+    <div class="site_header-content">
+      <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+    </div>
+  </header>
+<% else %>
+  <header class="site_header">
+    <div class="site_header-content">
+      <div class="site_header-logo"></div>
+      <nav class="site_header-nav">
+        <ul class="site_header-navItems">
+          <a class="site_header-navItem" href="https://www.google.com"><div> Tour </div></a>
+          <a class="site_header-navItem"><div> Pricing </div></a>
+          <a class="site_header-navItem"><div> Customers </div></a>
+          <a class="site_header-navItem"><div> Blog </div></a>
+          <%= link_to new_user_session_url, class: "site_header-navItem" do %><div> Sign In </div><% end %>
+        </ul>
+        <%= link_to "Try Shmarvest Free", new_user_registration_path, class: "site_header-tryItButton" %>
+      </nav>
+    </div>
+  </header>
+<% end %>
