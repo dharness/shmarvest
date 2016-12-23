@@ -101,3 +101,9 @@
     border-radius: 4px;
     margin-top: 30px;
 }
+
+.signup_page-signupButton:hover {
+    @include linear-gradient(#40b725, #299710);
+    background-color: #299710;
+    cursor: pointer;
+}
