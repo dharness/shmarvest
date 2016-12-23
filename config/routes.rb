@@ -4,5 +4,5 @@ Rails.application.routes.draw do
 
   root 'landing#index'
 
-  get '*unmatched_route', :to => 'landing#index'
+  # get '*unmatched_route', :to => 'landing#index'
 end
