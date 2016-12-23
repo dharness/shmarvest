@@ -3,13 +3,13 @@
 
   <div class="signup_page-content">
 
-    <div class="signup_page-header">
-      Start your free 30-day trial
-    </div>
+    <h2 class="signup_page-header">
+      Start your free 30-day trial.
+    </h2>
 
-    <div class="signup_page-subheader">
-      Fully functional, no credit card required
-    </div>
+    <h3 class="signup_page-subheader">
+      Fully functional. No credit card required
+    </h3>
     <div class="signup_page-form">
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: "signup_page-formContent"}) do |f| %>
         <%= devise_error_messages! %>
@@ -38,15 +38,14 @@
       <% end %>
 
       <div class="signup_page-fiveReasons">
-        <p>
-          5 Reasons You'll
-          Love Shmarvest
-          Fast to set up and easy to use
-          Look professional with style
-          Your data stays safe and secure
-          Track and grow your business
-          Real people to answer your questions
-        </p>
+        <h5> 5 Reasons You'll Love Shmarvest </h5>
+        <ol>
+          <li>Fast to set up and easy to use</li>
+          <li>Look professional with style</li>
+          <li>Your data stays safe and secure</li>
+          <li>Track and grow your business</li>
+          <li>Real people to answer your questions</li>
+        </ol>
       </div>
 
     </div>
