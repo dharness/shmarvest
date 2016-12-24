@@ -1,0 +1,333 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, /Users/dharness/dev/shmarvest/app/assets/stylesheets/reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, /Users/dharness/dev/shmarvest/app/assets/stylesheets/reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, /Users/dharness/dev/shmarvest/app/assets/stylesheets/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, /Users/dharness/dev/shmarvest/app/assets/stylesheets/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, /Users/dharness/dev/shmarvest/app/assets/stylesheets/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, /Users/dharness/dev/shmarvest/app/assets/stylesheets/reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, /Users/dharness/dev/shmarvest/app/assets/stylesheets/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, /Users/dharness/dev/shmarvest/app/assets/stylesheets/base.scss */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, label, input, ol, ul, li {
+  font-family: "TradeGothic-Regular";
+}
+
+@font-face {
+  font-family: "TradeGothic-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("TradeGothic/tradegothic-regular.eot?#iefix") format("embedded-opentype"), url("TradeGothic/tradegothic-regular.woff2") format("woff2"), url("TradeGothic/tradegothic-regular.woff") format("woff"), url("TradeGothic/tradegothic-regular.ttf") format("truetype"), url("TradeGothic/tradegothic-regular.svg#TradeGothic-Regular") format("svg");
+}
+@font-face {
+  font-family: "TradeGothic-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("TradeGothic/tradegothic-bold.eot?#iefix") format("embedded-opentype"), url("TradeGothic/tradegothic-bold.woff2") format("woff2"), url("TradeGothic/tradegothic-bold.woff") format("woff"), url("TradeGothic/tradegothic-bold.ttf") format("truetype"), url("TradeGothic/tradegothic-bold.svg#TradeGothic-Bold") format("svg");
+}
+@font-face {
+  font-family: "TradeGothic-italics";
+  font-style: normal;
+  font-weight: normal;
+  src: url("TradeGothic/tradegothic-italics.eot?#iefix") format("embedded-opentype"), url("TradeGothic/tradegothic-italics.woff2") format("woff2"), url("TradeGothic/tradegothic-italics.woff") format("woff"), url("TradeGothic/tradegothic-italics.ttf") format("truetype"), url("TradeGothic/tradegothic-italics.svg#TradeGothic-italics") format("svg");
+}
+@font-face {
+  font-family: "TradeGothic-medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("TradeGothic/tradegothic-medium.eot?#iefix") format("embedded-opentype"), url("TradeGothic/tradegothic-medium.woff2") format("woff2"), url("TradeGothic/tradegothic-medium.woff") format("woff"), url("TradeGothic/tradegothic-medium.ttf") format("truetype"), url("TradeGothic/tradegothic-medium.svg#TradeGothic-medium") format("svg");
+}
+/* line 1, /Users/dharness/dev/shmarvest/app/assets/stylesheets/partials/_site_header.scss */
+.site_header {
+  width: 100%;
+  background: linear-gradient(#f68a28, #f36c00);
+  height: 58px;
+}
+
+/* line 7, /Users/dharness/dev/shmarvest/app/assets/stylesheets/partials/_site_header.scss */
+.site_header-content {
+  width: 1000px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+/* line 15, /Users/dharness/dev/shmarvest/app/assets/stylesheets/partials/_site_header.scss */
+.site_header-logo {
+  width: 180px;
+  height: 30px;
+  align-self: center;
+  background: url(shmarvest-logo.svg) no-repeat 0 0;
+}
+
+/* line 22, /Users/dharness/dev/shmarvest/app/assets/stylesheets/partials/_site_header.scss */
+.site_header-logo:hover {
+  cursor: pointer;
+}
+
+/* line 26, /Users/dharness/dev/shmarvest/app/assets/stylesheets/partials/_site_header.scss */
+.site_header-nav {
+  display: flex;
+}
+
+/* line 30, /Users/dharness/dev/shmarvest/app/assets/stylesheets/partials/_site_header.scss */
+.site_header-navItems {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* line 37, /Users/dharness/dev/shmarvest/app/assets/stylesheets/partials/_site_header.scss */
+.site_header-navItems .site_header-navItem {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+  padding: 0px 15px 0px 15px;
+}
+
+/* line 48, /Users/dharness/dev/shmarvest/app/assets/stylesheets/partials/_site_header.scss */
+.site_header-navItems .site_header-navItem:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+/* line 53, /Users/dharness/dev/shmarvest/app/assets/stylesheets/partials/_site_header.scss */
+.site_header-tryItButton {
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 4px;
+  display: table;
+  margin: auto 0px auto 10px;
+  padding: 9px 12px 9px 12px;
+  font-size: 1em;
+  transition: background .2s;
+  text-decoration: none;
+}
+
+/* line 66, /Users/dharness/dev/shmarvest/app/assets/stylesheets/partials/_site_header.scss */
+.site_header-tryItButton:hover {
+  background: #3eb123;
+  cursor: pointer;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* line 1, /Users/dharness/dev/shmarvest/app/assets/stylesheets/signup.scss */
+.signup_page .site_header {
+  height: 62px;
+}
+
+/* line 5, /Users/dharness/dev/shmarvest/app/assets/stylesheets/signup.scss */
+.signup_page .site_header-content {
+  width: 700px;
+  margin: auto;
+}
+
+/* line 10, /Users/dharness/dev/shmarvest/app/assets/stylesheets/signup.scss */
+.signup_page-content {
+  padding: 40px 20px 30px;
+  width: 700px;
+  margin: auto;
+}
+
+/* line 16, /Users/dharness/dev/shmarvest/app/assets/stylesheets/signup.scss */
+.signup_page-header {
+  font-size: 30px;
+  line-height: 1.2;
+  font-family: "TradeGothic-Regular";
+  color: #444;
+  font-weight: 600;
+}
+
+/* line 24, /Users/dharness/dev/shmarvest/app/assets/stylesheets/signup.scss */
+.signup_page-subheader {
+  font-size: 24px;
+  font-weight: 100;
+  margin-bottom: 40px;
+  margin-top: 2px;
+  line-height: 1.3;
+  font-family: "TradeGothic-Regular";
+  color: #444;
+}
+
+/* line 34, /Users/dharness/dev/shmarvest/app/assets/stylesheets/signup.scss */
+.signup_page-form {
+  display: flex;
+}
+
+/* line 38, /Users/dharness/dev/shmarvest/app/assets/stylesheets/signup.scss */
+.signup_page-formContent {
+  width: 470px;
+  margin-right: 20px;
+}
+
+/* line 43, /Users/dharness/dev/shmarvest/app/assets/stylesheets/signup.scss */
+.signup_page-fiveReasons {
+  background: #f4f4f4;
+  flex: 1;
+  border-radius: 6px;
+  padding: 20px;
+}
+/* line 48, /Users/dharness/dev/shmarvest/app/assets/stylesheets/signup.scss */
+.signup_page-fiveReasons h5 {
+  font-size: 17px;
+  color: #777;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.3;
+  padding-right: 30px;
+}
+/* line 57, /Users/dharness/dev/shmarvest/app/assets/stylesheets/signup.scss */
+.signup_page-fiveReasons ol {
+  margin-top: 20px;
+  list-style: decimal;
+  padding-left: 20px;
+}
+/* line 61, /Users/dharness/dev/shmarvest/app/assets/stylesheets/signup.scss */
+.signup_page-fiveReasons ol li {
+  font-size: 12px;
+  color: #999;
+  line-height: 1.5;
+}
+
+/* line 69, /Users/dharness/dev/shmarvest/app/assets/stylesheets/signup.scss */
+.signup_page-form .field {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  height: 40px;
+}
+
+/* line 76, /Users/dharness/dev/shmarvest/app/assets/stylesheets/signup.scss */
+.signup_page-form .field input {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border: 1px solid #bbb;
+  font-size: 1rem;
+  line-height: 16px;
+  padding: 10px;
+  border-radius: 4px;
+  min-width: 72%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* line 89, /Users/dharness/dev/shmarvest/app/assets/stylesheets/signup.scss */
+.signup_page-form .field label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  align-self: center;
+}
+
+/* line 97, /Users/dharness/dev/shmarvest/app/assets/stylesheets/signup.scss */
+.signup_page-form .field .field_with_errors {
+  width: 72%;
+}
+
+/* line 101, /Users/dharness/dev/shmarvest/app/assets/stylesheets/signup.scss */
+.signup_page-form .field .field_with_errors input {
+  float: right;
+  width: 100%;
+  border: 1px solid #d20a0a;
+}
+
+/* line 107, /Users/dharness/dev/shmarvest/app/assets/stylesheets/signup.scss */
+.signup_page-form .field .field_with_errors .message {
+  background: #d20a0a;
+  border-radius: 3px;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+  padding: 5px;
+  color: white;
+  position: relative;
+  float: right;
+  right: 5px;
+  height: 22px;
+  box-sizing: border-box;
+  top: -31.5px;
+}
+
+/* line 125, /Users/dharness/dev/shmarvest/app/assets/stylesheets/signup.scss */
+.signup_page-signupButton {
+  background-color: #51c137;
+  background-image: -webkit-linear-gradient(#51c137, #2da411);
+  background-image: linear-gradient(#51c137, #2da411);
+  background-color: #2da411;
+  border: 1px solid #299710;
+  color: white;
+  font-size: 18px;
+  padding: 12px 20px 12px 20px;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+/* line 136, /Users/dharness/dev/shmarvest/app/assets/stylesheets/signup.scss */
+.signup_page-signupButton:hover {
+  background-color: #40b725;
+  background-image: -webkit-linear-gradient(#40b725, #299710);
+  background-image: linear-gradient(#40b725, #299710);
+  background-color: #299710;
+  cursor: pointer;
+}
