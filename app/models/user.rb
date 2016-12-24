@@ -12,7 +12,7 @@ class User < ApplicationRecord
     devise :database_authenticatable, :registerable,
             :recoverable, :rememberable, :trackable, :validatable
 
-    validates :first_name, :last_name, :company_name, :web_address, :presence => true
+    validates :first_name, :last_name, :company_name, :web_address, :team_size, :presence => true
     validates :password, confirmation: false, presence: true,
                         length: { minimum: 8 }, on: :create
     validates :web_address, uniqueness: true, :WebAddress => true

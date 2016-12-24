@@ -36,8 +36,12 @@
 }
 
 .signup_page-formContent {
-    width: 470px;
+    flex: 2;
     margin-right: 20px;
+}
+
+.signup_page-fiveReasonsWrapper {
+    flex: 1;
 }
 
 .signup_page-fiveReasons {
@@ -134,12 +138,13 @@
 
 .field .signup_page-webAddressField {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     width: 72%;
 }
 
 .field .signup_page-webAddressField input {
     min-width: 0%;
+    flex: 1;
     margin-right: 10px;
 }
 

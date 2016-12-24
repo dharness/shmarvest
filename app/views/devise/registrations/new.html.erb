@@ -21,7 +21,6 @@
         html: {class: "signup_page-formContent"},
         :validate => true) do |f| %>
 
-        <%= devise_error_messages! %>
 
         <div class="field">
           <label>First Name</label>
@@ -63,7 +62,7 @@
 
         <div class="field">
           <label>Team Size</label>
-          <%= f.select :team_size, ['1', '2-4', '5-9', '10-49', '50+'], :prompt => "Please select one..."%>
+          <%= f.select :team_size, ['1', '2-4', '5-9', '10-49', '50+'], :prompt => "Please select one...", validate: true%>
         </div>
 
         <div class="actions">
