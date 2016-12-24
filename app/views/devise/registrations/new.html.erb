@@ -20,8 +20,28 @@
         :validate => true) do |f| %>
 
         <div class="field">
+          <label>First Name</label>
+          <%= f.text_field :first_name, autofocus: true, :validate => true %>
+        </div>
+
+        <div class="field">
+          <label>Last Name</label>
+          <%= f.text_field :last_name, :validate => true %>
+        </div>
+
+        <div class="field">
+          <label>Company Name</label>
+          <%= f.text_field :company_name, :validate => true %>
+        </div>
+
+        <div class="field">
           <label>Email</label>
-          <%= f.email_field :email, autofocus: true, :validate => true %>
+          <%= f.email_field :email, :validate => true %>
+        </div>
+
+        <div class="field">
+          <label>Contact Phone</label>
+          <%= f.telephone_field :contact_phone, :validate => true %>
         </div>
 
         <div class="field">
@@ -30,8 +50,8 @@
         </div>
 
         <div class="field">
-          <%= f.label :password_confirmation %>
-          <%= f.password_field :password_confirmation, autocomplete: "off", validate: true %>
+          <label>Web Address</label>
+          <%= f.text_field :web_address, autocomplete: "off", validate: true %>
         </div>
 
         <div class="actions">
@@ -39,15 +59,17 @@
         </div>
       <% end %>
 
-      <div class="signup_page-fiveReasons">
-        <h5> 5 Reasons You'll Love Shmarvest </h5>
-        <ol>
-          <li>Fast to set up and easy to use</li>
-          <li>Look professional with style</li>
-          <li>Your data stays safe and secure</li>
-          <li>Track and grow your business</li>
-          <li>Real people to answer your questions</li>
-        </ol>
+      <div class="signup_page-fiveReasonsWrapper">
+        <div class="signup_page-fiveReasons">
+          <h5> 5 Reasons You'll Love Shmarvest </h5>
+          <ol>
+            <li>Fast to set up and easy to use</li>
+            <li>Look professional with style</li>
+            <li>Your data stays safe and secure</li>
+            <li>Track and grow your business</li>
+            <li>Real people to answer your questions</li>
+          </ol>
+        </div>
       </div>
 
     </div>
