@@ -36,7 +36,7 @@
 }
 
 .signup_page-formContent {
-    width: 460px;
+    width: 470px;
     margin-right: 20px;
 }
 
@@ -70,6 +70,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
+    height: 40px;
 }
 
 .signup_page-form .field input {
@@ -79,9 +80,10 @@
     font-size: 1rem;
     line-height: 16px;
     padding: 10px;
-    width: 50%;
     border-radius: 4px;
     min-width: 72%;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .signup_page-form .field label {
@@ -89,6 +91,7 @@
     font-weight: 500;
     color: #555;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    align-self: center;
 }
 
 .signup_page-form .field .field_with_errors {
@@ -98,7 +101,25 @@
 .signup_page-form .field .field_with_errors input {
     float: right;
     width: 100%;
-    border: 1px solid red;
+    border: 1px solid #d20a0a;;
+}
+
+.signup_page-form .field .field_with_errors .message {
+    background: #d20a0a;;
+    border-radius: 3px;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    padding: 5px;
+    color: white;
+    position: relative;
+    float: right;
+    right: 5px;
+    height: 22px;
+    box-sizing: border-box;
+    top: (40 - (22/2) + (5/2)) * -1px;
 }
 
 .signup_page-signupButton {

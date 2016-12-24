@@ -20,14 +20,12 @@
         :validate => true) do |f| %>
 
         <div class="field">
-          <%#= f.label :email %>
-          <%#= devise_error_messages![:password] %>
           <label>Email</label>
           <%= f.email_field :email, autofocus: true, :validate => true %>
         </div>
 
         <div class="field">
-          <%= f.label :password %>
+          <label>Password</label>
           <%= f.password_field :password, autocomplete: "off", validate: true %>
         </div>
 
