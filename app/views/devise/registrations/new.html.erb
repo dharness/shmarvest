@@ -19,9 +19,11 @@
         html: {class: "signup_page-formContent"},
         :validate => true) do |f| %>
 
+        <%= devise_error_messages! %>
+
         <div class="field">
           <label>First Name</label>
-          <%= f.text_field :first_name, autofocus: true, :validate => true %>
+          <%= f.text_field :first_name, :validate => true %>
         </div>
 
         <div class="field">
@@ -41,17 +43,22 @@
 
         <div class="field">
           <label>Contact Phone</label>
-          <%= f.telephone_field :contact_phone, :validate => true %>
+          <%= f.text_field :contact_phone, autocomplete: "off", :validate => true %>
         </div>
 
         <div class="field">
           <label>Password</label>
-          <%= f.password_field :password, autocomplete: "off", validate: true %>
+          <%= f.password_field :password, autocomplete: "off", validate: false %>
         </div>
 
         <div class="field">
           <label>Web Address</label>
           <%= f.text_field :web_address, autocomplete: "off", validate: true %>
+        </div>
+
+        <div class="field">
+          <label>Team Size</label>
+          <%= f.select :team_size, ['Please select one...', '1', '2-4', '5-9', '10-49', '50+']%>
         </div>
 
         <div class="actions">
