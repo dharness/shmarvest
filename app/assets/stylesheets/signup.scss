@@ -134,6 +134,7 @@
 
 .field .signup_page-webAddressField {
     display: flex;
+    justify-content: flex-end;
     width: 72%;
 }
 
@@ -142,8 +143,12 @@
     margin-right: 10px;
 }
 
-.field .signup_page-webAddressField .field_with_errors input {
-    max-width: 40%;
+.field .signup_page-webAddressField .field_with_errors {
+    max-width: 59%;
+}
+
+.field .signup_page-webAddressField .field_with_errors .message {
+    right: 15px;
 }
 
 .field .signup_page-webAddressField span {
