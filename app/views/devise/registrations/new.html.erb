@@ -1,3 +1,5 @@
+<% content_for :title, "Sign Up for Shmarvest" %>
+
 <div class="signup_page">
   <%= render "site_header" %>
 
@@ -53,7 +55,10 @@
 
         <div class="field">
           <label>Web Address</label>
-          <%= f.text_field :web_address, autocomplete: "off", validate: true %>
+          <div class="signup_page-webAddressField">
+            <%= f.text_field :web_address, autocomplete: "off", validate: true %>
+            <span>.shmarvest.com</span>
+          </div>
         </div>
 
         <div class="field">
