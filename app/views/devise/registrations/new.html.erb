@@ -10,26 +10,30 @@
     <h3 class="signup_page-subheader">
       Fully functional. No credit card required
     </h3>
+
     <div class="signup_page-form">
-      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: "signup_page-formContent"}) do |f| %>
-        <%= devise_error_messages! %>
+      <%= form_for(
+        resource, 
+        as: resource_name, 
+        url: registration_path(resource_name), 
+        html: {class: "signup_page-formContent"},
+        :validate => true) do |f| %>
 
         <div class="field">
-          <%= f.label :email %><br />
-          <%= f.email_field :email, autofocus: true %>
+          <%#= f.label :email %>
+          <%#= devise_error_messages![:password] %>
+          <label>Email</label>
+          <%= f.email_field :email, autofocus: true, :validate => true %>
         </div>
 
         <div class="field">
           <%= f.label :password %>
-          <% if @minimum_password_length %>
-          <em style="display: none">(<%= @minimum_password_length %> characters minimum)</em>
-          <% end %><br />
-          <%= f.password_field :password, autocomplete: "off" %>
+          <%= f.password_field :password, autocomplete: "off", validate: true %>
         </div>
 
         <div class="field">
-          <%= f.label :password_confirmation %><br />
-          <%= f.password_field :password_confirmation, autocomplete: "off" %>
+          <%= f.label :password_confirmation %>
+          <%= f.password_field :password_confirmation, autocomplete: "off", validate: true %>
         </div>
 
         <div class="actions">

@@ -53,3 +53,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
 gem 'bourbon'
+gem 'client_side_validations', github: 'DavyJonesLocker/client_side_validations', branch: 'rails5'
