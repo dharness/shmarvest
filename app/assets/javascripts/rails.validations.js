@@ -634,9 +634,7 @@
   };
   window.ClientSideValidations.callbacks = {
     element: {
-      after: function(element, eventData) {
-        console.log("LEMMONS PIE")
-      },
+      after: function(element, eventData) {},
       before: function(element, eventData) {},
       fail: function(element, message, addError, eventData) {
         return addError();

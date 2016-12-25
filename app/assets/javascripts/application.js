@@ -13,5 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
 //= require rails.validations
+//= require rails.validations.customValidators
+//= require_tree .

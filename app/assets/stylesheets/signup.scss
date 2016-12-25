@@ -1,5 +1,5 @@
 .signup_page .site_header {
-    height: 62px;
+    height: 58px;
 }
 
 .signup_page .site_header-content {
@@ -9,7 +9,7 @@
 
 .signup_page-content {
     padding: 40px 20px 30px;
-    width: 700px;
+    width: 720px;
     margin: auto;
 }
 
@@ -36,8 +36,12 @@
 }
 
 .signup_page-formContent {
-    width: 470px;
+    flex: 2;
     margin-right: 20px;
+}
+
+.signup_page-fiveReasonsWrapper {
+    flex: 1;
 }
 
 .signup_page-fiveReasons {
@@ -73,7 +77,7 @@
     height: 40px;
 }
 
-.signup_page-form .field input {
+.signup_page-form .field input, select {
     box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
     background: #fff;
     border: 1px solid #bbb;
@@ -84,7 +88,18 @@
     min-width: 72%;
     height: 100%;
     box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #555;
 }
+
+.signup_page-form .field select {
+    box-shadow: none;
+    @include background(url(select-arrow.svg) no-repeat 100% 50%, linear-gradient(#fff, #eee));
+    background-size: 20px, 100%;
+    @include prefixer(appearance, none, webkit moz spec);
+    &:hover {cursor: pointer; }
+}
+
 
 .signup_page-form .field label {
     font-size: 14px;
@@ -94,6 +109,11 @@
     align-self: center;
 }
 
+.signup_page-form .field .field_with_errors select {
+    min-width: 100%;
+    border: 1px solid #d20a0a;
+}
+
 .signup_page-form .field .field_with_errors {
     width: 72%;
 }
@@ -101,7 +121,7 @@
 .signup_page-form .field .field_with_errors input {
     float: right;
     width: 100%;
-    border: 1px solid #d20a0a;;
+    border: 1px solid #d20a0a;
 }
 
 .signup_page-form .field .field_with_errors .message {
@@ -122,11 +142,50 @@
     top: (40 - (22/2) + (5/2)) * -1px;
 }
 
+.field .signup_page-webAddressField {
+    display: flex;
+    justify-content: space-between;
+    width: 72%;
+}
+
+.field .signup_page-webAddressField input {
+    min-width: 0%;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.field .signup_page-webAddressField .field_with_errors {
+    display: flex;
+}
+
+.field .signup_page-webAddressField .field_with_errors input {
+    margin-right: 10px;
+    min-width: calc(100% - 10px);
+}
+
+.field .signup_page-webAddressField .field_with_errors .message {
+    display: table;
+    position: relative;
+    left: calc(66% - 20px);
+    top: 0px;
+}
+
+
+.field .signup_page-webAddressField span {
+    align-self: center;
+    color: #555;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .signup_page-signupButton {
     @include linear-gradient(#51c137, #2da411);
     background-color: #2da411;
     border: 1px solid #299710;
     color: white;
+    font-family: "TradeGothic-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    line-height: 1.1;
+    -webkit-font-smoothing: antialiased;
     font-size: 18px;
     padding: 12px 20px 12px 20px;
     border-radius: 4px;
