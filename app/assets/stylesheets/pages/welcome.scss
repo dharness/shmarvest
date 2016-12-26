@@ -93,7 +93,7 @@
 .welcome-footer {
     display: flex;
     width: 600px;
-    margin: auto auto 40px auto;
+    margin: 40px auto 40px auto;
 }
 
 .welcome-footer__link {
@@ -110,6 +110,7 @@
         color: #777;
         font-size: 14px;
         margin: 5px 0 0;
+        line-height: 1.5;
     }
 }
 
@@ -117,4 +118,24 @@
     background: #f2f2f2;
     border-radius: 4px;
     text-decoration: none;
+}
+
+.welcome-footer__divide {
+    background: #bbb;
+    border: 0;
+    height: 1px;
+    margin: 20px auto;
+    width: 600px;
+}
+
+.welcome-footer__remove-page {
+    width: 100%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-decoration: underline;
+    color: #336699;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 40px;
 }
