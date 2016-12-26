@@ -89,3 +89,32 @@
     display: flex;
     flex-direction: column;
 }
+
+.welcome-footer {
+    display: flex;
+    width: 600px;
+    margin: auto auto 40px auto;
+}
+
+.welcome-footer__link {
+    padding: 20px;
+    color: #336699;
+    cursor: pointer;
+    flex: 1;
+    h3 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    p {
+        color: #777;
+        font-size: 14px;
+        margin: 5px 0 0;
+    }
+}
+
+.welcome-footer__link:hover {
+    background: #f2f2f2;
+    border-radius: 4px;
+    text-decoration: none;
+}
