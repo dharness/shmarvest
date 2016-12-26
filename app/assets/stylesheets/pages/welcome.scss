@@ -24,6 +24,7 @@
     font-size: 26px;
     font-weight: 600;
     letter-spacing: -0.2px;
+    text-align: center;
 }
 
 .welcome-hero__caption--light {
@@ -33,4 +34,58 @@
     line-height: 1.2;
     color: #777;
     padding-top: 10px;
+}
+
+.welcome-todos {
+    width: 600px;
+    margin: auto;
+}
+
+.welcome-todos__item {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    color: inherit;
+    display: block;
+    margin: 15px 0;
+    padding: 15px 20px;
+    cursor: pointer;
+    display: flex;
+}
+
+.welcome-todos__item:hover {
+    background: #f2f2f2;
+    border-color: #bbb;
+}
+
+.welcome-todos__item h2 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.welcome-todos__item p {
+    color: #777;
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.welcome-todos__check {
+    @include background-image(url("icon-check-green.svg"));
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #e4f6e0;
+    border: 2px solid #2e8d11;
+    border-radius: 36px;
+    float: left;
+    height: 36px;
+    width: 36px;
+    margin-right: 15px;
+    align-self: center;
+}
+
+.welcome-todos__info {
+    display: flex;
+    flex-direction: column;
 }
