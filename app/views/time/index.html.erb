@@ -24,13 +24,13 @@
 
         <div class="timesheet-viewer">
             <ul class="timesheet-viewer__days-list">
-                <button class="timesheet-viewer__button">M</button>
-                <button class="timesheet-viewer__button">T</button>
-                <button class="timesheet-viewer__button">W</button>
-                <button class="timesheet-viewer__button">Th</button>
-                <button class="timesheet-viewer__button">F</button>
-                <button class="timesheet-viewer__button">S</button>
-                <button class="timesheet-viewer__button">Su</button>
+                <% ['M', 'T', 'W', 'Th', 'F', 'S', 'Su'].each do |day| %>
+                    <button class="timesheet-viewer__button">
+                        <h4><%= day %></h4>
+                        <span>0:00</span>
+                    </button>
+                <% end %>
+                <button class="timesheet-viewer__button">Total: 0:00</button>
             </ul>
         </div>
 
