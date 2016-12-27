@@ -1,10 +1,23 @@
 $(document).ready(() => {
     initializePicker();
-    initializeDropdowns();
+    initializeEntryForm();
 });
 
-function initializeDropdowns() {
-     $(".chosen-select").chosen({}); 
+function initializeEntryForm() {
+     $(".chosen-select").chosen({});
+     $("#new-entry-button").click((e) => {
+        $(".entry-modal__overlay").toggleClass("entry-modal__overlay--hidden");
+     });
+
+     $("#entry-card-save-button").click((e) => {
+         e.preventDefault();
+         $(".entry-modal__overlay").toggleClass("entry-modal__overlay--hidden");
+     });
+
+     $("#entry-card-cancel-button").click((e) => {
+         e.preventDefault();
+         $(".entry-modal__overlay").toggleClass("entry-modal__overlay--hidden");
+     });
 }
 
 function initializePicker() {

@@ -8,6 +8,10 @@
     z-index: 3;
 }
 
+.entry-modal__overlay--hidden {
+    visibility: hidden;
+}
+
 .entry-card {
     position: fixed;
     top: 15%;
@@ -150,6 +154,7 @@
     height: 35px;
     cursor: pointer;
     border-radius: 4px;
+    text-shadow: 0 1px 0 #fff;
 }
 
 .entry-card__cancel-button:hover {
