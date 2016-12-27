@@ -1,0 +1,9 @@
+.kalendae {
+    top: 30px;
+    left: calc(-144px/2);
+    visibility: hidden;
+}
+
+.kalendae--active {
+    visibility: visible;
+}

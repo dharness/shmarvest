@@ -1,3 +1,5 @@
+// *= require pikaday
+
 @import "bourbon";
 @import "reset";
 @import "variables";
@@ -6,6 +8,7 @@
 @import "partials/site_header";
 @import "partials/site_footer";
 @import "partials/subnav";
+@import "partials/kalendae";
 @import "landing";
 @import "pages/signup";
 @import "pages/signin";

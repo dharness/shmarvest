@@ -114,6 +114,25 @@
     }
 }
 
+.timesheet__calendar--selected {
+    background: #eaeaea;
+    background-image: url("icon-calendar.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: #bbb !important;
+    box-shadow: inset 0 1px 4px rgba(0,0,0,0.1) !important;
+    cursor: default !important;
+    outline: 0;
+    text-shadow: 0 1px 0 #fff !important;
+    z-index: 1;
+    &:hover {
+        background: #eaeaea;
+        background-image: url("icon-calendar.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
 .timesheet__mode-switcher {
     display: flex;
     margin: 0 5px;
