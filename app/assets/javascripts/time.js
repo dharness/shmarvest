@@ -1,4 +1,26 @@
 $(document).ready(() => {
+    initializePicker();
+    initializeEntryForm();
+});
+
+function initializeEntryForm() {
+     $(".chosen-select").chosen({});
+     $("#new-entry-button").click((e) => {
+        $(".entry-modal__overlay").toggleClass("entry-modal__overlay--hidden");
+     });
+
+     $("#entry-card-save-button").click((e) => {
+         e.preventDefault();
+         $(".entry-modal__overlay").toggleClass("entry-modal__overlay--hidden");
+     });
+
+     $("#entry-card-cancel-button").click((e) => {
+         e.preventDefault();
+         $(".entry-modal__overlay").toggleClass("entry-modal__overlay--hidden");
+     });
+}
+
+function initializePicker() {
     var picker = new Pikaday({
         field: $('#calendar-popup-button')[0],
         position: 'bottom right',
@@ -17,4 +39,4 @@ $(document).ready(() => {
             $("#calendar-popup-button").toggleClass("timesheet__calendar--selected")
         }
     });
-});
+}

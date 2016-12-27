@@ -16,4 +16,5 @@
 //= require rails.validations
 //= require rails.validations.customValidators
 //= require pikaday
+//= require chosen-js/chosen.jquery.js
 //= require_tree .

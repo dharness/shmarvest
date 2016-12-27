@@ -1,4 +1,5 @@
 // *= require pikaday
+// *= require chosen-js/chosen.css
 
 @import "bourbon";
 @import "reset";
@@ -9,6 +10,7 @@
 @import "partials/site_footer";
 @import "partials/subnav";
 @import "partials/pika_day";
+@import "partials/entry_modal";
 @import "landing";
 @import "pages/signup";
 @import "pages/signin";

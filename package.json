@@ -1,0 +1,25 @@
+{
+  "name": "shmarvest",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dharness/shmarvest.git"
+  },
+  "author": "Dylan Harness <dharness.student@gmail.com> (dharness.github.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dharness/shmarvest/issues"
+  },
+  "homepage": "https://github.com/dharness/shmarvest#readme",
+  "dependencies": {
+    "chosen-js": "1.6.2"
+  }
+}
