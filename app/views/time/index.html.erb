@@ -5,15 +5,13 @@
 <div class="timesheet">
     <div class="new-time-entry">
         <button class="new-time-entry__button"></button>
+        <div class="calendar-popover"></div>
         <span class="new-time-entry__desc">New Entry</span>
     </div>
     <div class="timesheet__content">
         <div class="timesheet__header">
             <div class="timesheet__header-date">
-            <h2>
-                Monday
-                <span>26 Dec</span>
-            </h2>
+            <h2> Monday <span>26 Dec</span> </h2>
             </div>
             <div class="timesheet__controls">
                 <div class="timesheet__day-switcher">
@@ -21,7 +19,7 @@
                     <button class="timesheet__day-switcher-button">Today</button>
                     <button class="timesheet__day-switcher-button"></button>
                 </div>
-                <div class="timesheet__calendar"></div>
+                <div class="timesheet__calendar" id="calendar-popup-button"></div>
                 <div class="timesheet__mode-switcher">
                     <button>Day</button>
                     <button>Week</button>

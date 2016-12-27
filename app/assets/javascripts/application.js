@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require rails.validations
 //= require rails.validations.customValidators
+//= require pikaday
 //= require_tree .
