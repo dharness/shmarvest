@@ -1,13 +1,13 @@
-<header class="site_header">
+<header class="site_header site_header-inner">
     <div class="site_header-content">
         <ul class="inner-nav">
-            <li class="inner-nav__item inner-nav__item--home inner-nav__item--current"></li>
-            <li class="inner-nav__item">Timesheets</li>
-            <li class="inner-nav__item">Projects</li>
-            <li class="inner-nav__item">Team</li>
-            <li class="inner-nav__item">Reports</li>
-            <li class="inner-nav__item">Invoices</li>
-            <li class="inner-nav__item">Manage</li>
+            <%= link_to "", "welcome", class:"inner-nav__item inner-nav__item--home" + selected_link("welcome") %>
+            <%= link_to "Timesheets", "time", class:"inner-nav__item" + selected_link("time")%>
+            <%= link_to "Projects", "projects", class:"inner-nav__item" + selected_link("projects")%>
+            <%= link_to "Team", "team", class:"inner-nav__item" + selected_link("team")%>
+            <%= link_to "Reports", "reports", class:"inner-nav__item" + selected_link("reports")%>
+            <%= link_to "Invoices", "invoices", class:"inner-nav__item" + selected_link("invoices")%>
+            <%= link_to "Manage", "manage", class:"inner-nav__item" + selected_link("manage")%>
         </ul>
         <ul class="inner-header-options">
             <li class="inner-header-options__item">Help</li>
