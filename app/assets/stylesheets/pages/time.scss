@@ -133,6 +133,11 @@
     }
 }
 
+.timesheet__calendar:active {
+    @extend .timesheet__calendar--selected;
+}
+
+
 .timesheet__mode-switcher {
     display: flex;
     margin: 0 5px;
