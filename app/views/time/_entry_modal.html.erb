@@ -8,17 +8,28 @@
         </div>
 
         <form class="entry-card__form">
-            <label>
-            <select data-placeholder="Choose a country..." class="chosen-select">
-                <option>Lemmons</option>
-                <option>Lemmons</option>
-                <option>Lemmons</option>
-                <option>Lemmons</option>
-                <option>Lemmons</option>
-                <option>Lemmons</option>
-                <option>Lemmons</option>
-                <option>Lemmons</option>
-            </select>
+            <label class="entry-card__input-label">Project / Task</label>
+            <div class="chosen-select-wrapper">
+                <select class="chosen-select">
+                    <option>Valia</option>
+                    <option>Blitz</option>
+                </select>
+            </div>
+            <div class="chosen-select-wrapper">
+                <select class="chosen-select">
+                    <option>Graphic Design</option>
+                    <option>Programming</option>
+                    <option>Management</option>
+                </select>
+            </div>
+            <div class="entry-card__input-group">
+                <textarea class="entry-card__notes" placeholder="Notes (optional)"></textarea>
+                <input class="entry-card__duration" placeholder="0:00" type="text" value="">
+            </div>
+            <div class="entry-card__actions">
+                <button class="entry-card__save-button">Save Entry</button>
+                <button class="entry-card__cancel-button">Cancel</button>
+            </div>
         </form>
 
     </div>
