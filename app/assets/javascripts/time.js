@@ -1,4 +1,13 @@
 $(document).ready(() => {
+    initializePicker();
+    initializeDropdowns();
+});
+
+function initializeDropdowns() {
+     $(".chosen-select").chosen({}); 
+}
+
+function initializePicker() {
     var picker = new Pikaday({
         field: $('#calendar-popup-button')[0],
         position: 'bottom right',
@@ -17,4 +26,4 @@ $(document).ready(() => {
             $("#calendar-popup-button").toggleClass("timesheet__calendar--selected")
         }
     });
-});
+}
