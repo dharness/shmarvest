@@ -11,6 +11,13 @@
     padding: 0 12px;
 }
 
+.projects-page__contents {
+    width: 1000px;
+    margin: auto;
+    padding: 40px 12px;
+    box-sizing: border-box;
+}
+
 .subnav__project-controls {
     display: flex;
     .button-secondary, span {
@@ -26,7 +33,7 @@
 }
 
 .subnav__project-search {
-    background: #fff url(https://cache.harvestapp.com/assets/3kings/icon-search-transparent-60e8a80c4e027538f99c37c4c0eadc05.svg) 10px 50% no-repeat;
+    background: #fff url("icon-search.svg") 10px 50% no-repeat;
     background-size: 12px;
     font-size: 13px;
     padding-left: 28px;
@@ -41,4 +48,85 @@
     padding-left: 28px;
     max-width: 225px;
     align-self: center;
+}
+
+.filter-projects {
+    height: 31px;
+    margin-bottom: 20px;
+}
+
+.filter-projects__dropdown-button {
+    padding-right: 30px;
+}
+
+.filter-projects__dropdown-button:after {
+    content: "";
+    background-image: url("icon-dropdown-dark.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+    display: block;
+    min-width: 16px;
+    min-height: 16px;
+    top: -20px;
+    right: -20px;
+}
+
+.filter-projects__dropdown {
+    background-color: #fff;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.15);
+    color: #333;
+    line-height: 1.5;
+    max-width: 175px;
+    min-width: 100px;
+    text-align: left;
+    z-index: 1001;
+    position: relative;
+    margin-top: 5px;
+    left: 0;
+    padding-bottom: 10px;
+}
+
+.filter-projects__dropdown--hidden {
+    visibility: hidden;
+}
+
+.filter-projects__dropdown:before {
+    content: "";
+    position: relative;
+    left: 10px;
+    top: -6px;
+    height: 10px;
+    width: 10px;
+    background: white;
+    display: block;
+    transform: rotate(45deg);
+    border-left: 1px solid #bbb;
+    border-top: 1px solid #bbb;
+}
+
+.filter-projects__filter-option {
+    display: block;
+    font-size: 13px;
+    line-height: 1;
+    padding: 7px 15px;
+    cursor: pointer;
+}
+
+.filter-projects__filter-option:hover {
+    background: #347bd3;
+    color: #fff;
+}
+
+.projects-page__actions-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.projects-page__actions-dropdown {
+    line-height: 20px;
+    display: block;
+    height: 100%;
 }
