@@ -130,3 +130,74 @@
     display: block;
     height: 100%;
 }
+
+.project-tips {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 60px auto 100px;
+    padding: 25px 20px 10px;
+    width: 73%;
+}
+
+.project-tips__contents {
+    display: flex;
+    padding: 25px 20px 10px;
+}
+
+.project-tips__quit-button {
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    right: 0px;
+    top: -10px;
+    display: block;
+    height: 22px;
+    width: 22px;
+    float: right;
+}
+
+.project-tips__quit-button:after {
+    content: "";
+    background-image: url("icon-x.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    margin-left: -1px;
+    margin-top: -1px;
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+
+.project-tips__header {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-tips__header h2 {
+    font-size: 22px;
+    font-family: "TradeGothic-Medium";
+    font-weight: 600;
+    color: #333;
+}
+
+.project-tips__description {
+    color: #333;
+    font-size: 18px;
+    font-family: "TradeGothic-Regular";
+    font-weight: 100;
+    line-height: 1.2;
+    text-rendering: optimizelegibility;
+}
+
+.project-tips__header a {
+    font-size: 14px;
+    text-decoration: underline;
+    color: #336699;
+    cursor: pointer;
+}
