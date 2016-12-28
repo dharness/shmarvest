@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   constraints subdomain: /./ do
     get '/welcome', to: 'welcome#index'
     get '/time', to: 'time#index'
+    get '/projects', to: 'projects#index'
   end
 
   root 'landing#index'
