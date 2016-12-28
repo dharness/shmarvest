@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     get '/welcome', to: 'welcome#index'
     get '/time', to: 'time#index'
     get '/projects', to: 'projects#index'
+    get '/reports', to: 'reports#index'
   end
 
   root 'landing#index'

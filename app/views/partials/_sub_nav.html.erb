@@ -1,0 +1,7 @@
+<div class="subnav">
+    <div class="subnav__content">
+        <% tab_names.each_with_index do |name, i| %>
+            <%= link_to name, name.downcase, class: 'subnav__tab-title' + (i == 0 ? '--active' : '') %>
+        <% end %>
+    </div>
+</div>

@@ -1,7 +1,6 @@
 <% content_for :body_class, "time-page" %>
 <%= render "partials/inner_site_header" %>
-<%= render "sub_nav" %>
-
+<%= render(:partial => "partials/sub_nav", :locals => {:tab_names => @tab_names})%>
 <%= render "entry_modal" %>
 
 <div class="timesheet">
