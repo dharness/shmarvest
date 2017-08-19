@@ -1,24 +1,15 @@
-# README
+# Shmarvest
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Shmarvest is a deploy-your-own time-tracking app. It is built to be an exact copy of [Harvest](https://www.getharvest.com/)
 
-Things you may want to cover:
+### Status
 
-* Ruby version
+Not currently maintained, not currently useable. [Reach out]() if you're interested!
 
-* System dependencies
+### Appearance
 
-* Configuration
+![Signup_image](https://puu.sh/xelTL/71a45c462f.png)
 
-* Database creation
+![Signin_image](https://puu.sh/xem6D/f05bf37606.png)
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Projects_image](https://puu.sh/xemSt/5bddb86ce2.png)
